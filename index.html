@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iCoder</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg anim" id="navbar">
+      <a class="navbar-brand" href="/">
+        <div class="enlarge-image">
+          <img class="w-50" src="/images/logo.png" alt="logo" />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link text-light font-weight-bolder"
+              onclick="myFunction(this)"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light font-weight-bolder"
+              onclick="myFunction(this)"
+              href="#services"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light font-weight-bolder"
+              onclick="myFunction(this)"
+              href="#courses"
+              >Courses</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light font-weight-bolder" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/about.html">About Us</a>
+              <a class="dropdown-item" href="/services.html">Our Services</a>
+              <a class="dropdown-item" href="/contact.html">Contact Us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light font-weight-bolder"
+              onclick="myFunction(this)"
+              href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light font-weight-bolder"
+              onclick="myFunction(this)"
+              href="#contact"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <section class="sec pt-56">
+    
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="header-text">
+              <h6>Welcome to iCoder</h6>
+              <h5 class="font-bold my-3">INDIA'S BEST Coding Platform</h5>
+              <h2 class="font-extrabold">Best Place To Learn&nbsp <span class="typewriter position-absolute text-red-600" id="typewriter"></span></h2>
+              <div class="main-button-gradient my-3">
+                <a href="#contact"><button class="btn enrollbtn no-underline-button">Enroll Now!</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right-image w-100">
+              <img src="/images/edit.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section id="services">
+      <!-- heading -->
+      <div class="container text-center pt-64 mb-24 dbggbg">
+        <small class="text-gray-600">Our Services</small>
+        <div class="flex items-center justify-content-center my-3">
+          <h4 class="text-4xl font-extrabold">Provided &nbsp</h4>
+          <h4 class="text-4xl font-extrabold text-red-600">Services</h4>
+        </div>
+      </div>
+
+      <div
+        class="flex container my-16 owl-carousel owl-theme owl1"
+        id="card-container"
+      >
+
+        <!-- card items -->
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/coding (1).png" />
+            <h5 class="font-bold mt-3">IDE</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We provide web-based or downloadable IDEs that offer a complete
+                set of tools for coding, debugging, and testing software.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/graphic-design.png" />
+            <h5 class="font-bold mt-3">Code Collaboration</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We support collaborative coding, allowing multiple developers
+                to work on the same codebase simultaneously.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/idea.png" />
+            <h5 class="font-bold mt-3">ProjectManagement</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >Our platforms offer project management features, including task
+                tracking, issue management, and project boards.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/atom.png" />
+            <h5 class="font-bold mt-3">Code Libraries/APIs</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We provide access to extensive code libraries and APIs
+                (Application Programming Interfaces)</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/c-.png" />
+            <h5 class="font-bold mt-3">Online Tutorials</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We provide educational resources, tutorials, and documentation
+                to help programmers learn new programming languages
+                technologies.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/analysis.png" />
+            <h5 class="font-bold mt-3">Testing/Debugging</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif">
+                We offer testing and debugging tools to assist developers in
+                identifying and fixing issues in their code.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/hosting.png" />
+            <h5 class="font-bold mt-3">Deployment/Hosting</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We provide hosting services or integration with cloud
+                platforms, allowing developers to deploy and host their
+                applications directly from the platform.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card item1 item mx-4">
+          <div class="image my-3">
+            <img src="/images/target.png" />
+            <h5 class="font-bold mt-3">Community Support</h5>
+          </div>
+          <div class="details">
+            <div class="center">
+              <small class="font-serif"
+                >We foster a community of developers, where users can ask
+                questions, seek help, and share knowledge with others.</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container text-center pt-32">
+        <small class="text-gray-600">Our Courses</small>
+        <div class="flex items-center justify-content-center my-3">
+          <h4 class="text-4xl font-extrabold">What You Can &nbsp</h4>
+          <h4 class="text-4xl font-extrabold text-red-600">Learn</h4>
+        </div>
+      </div>
+
+      <div id="id123" class="mt-32">
+        <div>
+          <!-- Name of the course cards -->
+          <div
+            data-card="card1"
+            class="fullstack my-4 p-2 font-monospace text-center w-96 "
+          >
+            <span>Full Stack Development</span>
+          </div>
+          <div
+            data-card="card2"
+            class="fullstack my-4 p-2 font-monospace text-center w-96"
+          >
+            <span>Front End Development</span>
+          </div>
+          <div
+            data-card="card3"
+            class="fullstack my-4 p-2 font-monospace text-center w-96"
+          >
+            <span>Back End Development</span>
+          </div>
+          <div
+            data-card="card4"
+            class="fullstack my-4 p-2 font-monospace text-center w-96"
+          >
+            <span>Data Stuctures and Algorithms</span>
+          </div>
+        </div>
+       
+
+          <!-- card1 -->
+          <div class="card mb-3 courseCard active" id="card1" style="max-width: 900px;">
+            <div class="row no-gutters" >
+              <div class="col-md-6" >
+                <img class="w-100 h-100 object-fit-contain" src="/images/untitlsssssed.png">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Full Stack Development</h5>
+                  <p class="card-text text-left">
+                    Full stack web development refers to the practice of building
+                    web applications that involve working with both the front-end
+                    and back-end components. A full stack web developer is
+                    responsible for handling all aspects of web development,
+                    including server-side programming, client-side programming,
+                    and database management.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">72 Hours &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;8 Weeks&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6 Certificates</small>
+                  </p>
+                  <a href="#contact"><button class="btn enrollbtn no-underline-button">Enroll Now!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card2-->
+          <div class="card mb-3 courseCard" id="card2" style="max-width: 900px;">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img class="w-100 h-100 object-fit-contain" src="/images/19362653.jpg">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Front End Development</h5>
+                <p class="card-text text-left">
+                  A front-end developer creates websites and applications using
+                  web languages such as HTML, CSS, and JavaScript that allow
+                  users to access and interact with the site or app. When you
+                  visit a website, the design elements you see were created by a
+                  front-end developer.The three main languages you need to know
+                  well are HTML, CSS, and JavaScript.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >36 Hours &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 3 Weeks
+                    &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 4 Certificates
+                  </small>
+                </p>
+                <a href="#contact"><button class="btn enrollbtn no-underline-button">Enroll Now!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card3-->
+          <div class="card mb-3 courseCard" id="card3" style="max-width: 900px;">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img class="w-100 h-100 object-fit-contain" src="/images/3657405.jpg">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Back End Development</h5>
+                <p class="card-text text-left">
+                  Back-end development means working on server-side software,
+                  which focuses on everything you can't see on a website.
+                  Back-end developers ensure the website performs correctly,
+                  focusing on databases, back-end logic, application programming
+                  interface (APIs), architecture, and servers.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >48 Hours &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 4 Weeks
+                    &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 2 Certificates
+                  </small>
+                </p>
+                <a href="#contact"><button class="btn enrollbtn no-underline-button">Enroll Now!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- card4 -->
+          <div class="card mb-3 courseCard" id="card4" style="max-width: 900px;">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img class="w-100 h-100 object-fit-contain" src="/images/data-information-network-system-drawing-concept.jpg">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Data Stuctures and Algorithms</h5>
+                <p class="card-text text-left">
+                  A computer program is a collection of instructions to perform
+                  a specific task. For this, a computer program may need to
+                  store data, retrieve data, and perform computations on the
+                  data.A data structure is a named location that can be used to
+                  store and organize data. And, an algorithm is a collection of
+                  steps to solve a particular problem.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >56 Hours &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 5 Weeks
+                    &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 4 Certificates
+                  </small>
+                </p>
+                <a href="#contact"><button class="btn enrollbtn no-underline-button">Enroll Now!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      
+      <!-- heading -->
+      <div class="container text-center pt-32 d57764">
+        <small class="text-gray-600">TESTIMONIALS</small>
+        <div class="flex items-center justify-content-center my-3">
+          <h4 class="text-4xl font-extrabold">What They &nbsp</h4>
+          <h4 class="text-4xl font-extrabold text-red-600">Think</h4>
+        </div>
+      </div>
+
+      <div class="container demo owl-carousel owl-theme owl2">
+        <div class="card demoo items-center">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Sophia Whity
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >CEO and Co-Founder</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hello there!</h3>
+
+              <p>
+                “I have learned Python from fundamental to advanced topics here.
+                Art and Tim are really good at teaching Python.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Varun Sodhia
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Data scientist</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hi!</h3>
+
+              <p>
+                “This is an excellent class for an intro to python. Art is
+                helpful and works with the students specific to everyone.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Philip Odelfelt
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Web developer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hola!</h3>
+
+              <p>
+                “Amazing classes at this place. Incredible price and quality.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Adriana Rodriguez
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Back-end developer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hi!</h3>
+
+              <p>
+                “Very instructive course. Definitely worthwhile if you are
+                trying to learn back-end. The teacher was engaging.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Aidan Garton
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Software Developer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hey!</h3>
+
+              <p>
+                “I would highly recommend this course to anyone who is looking
+                to gain some knowledge with Javascript.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">Audrey T.</h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Full-Stack Web Developer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hey!</h3>
+
+              <p>
+                “I loved Art! He’s super patient and answers all questions! I
+                recommend this class for all beginners!!”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">
+                  Aidan Garton
+                </h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >UX designer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hi!</h3>
+
+              <p>
+                “Overall very happy wit the course. The third class became very
+                confusing and hard to keep up.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card item demoo">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <h5 class="text-center mt-2 text-white font-bold">Tomas C.</h5>
+                <span class="text-center fixed-bottom mb-2 text-white font-bold"
+                  >Software Developer</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="content">
+              <h3>Hey!</h3>
+
+              <p>
+                “pretty fun and informative. Very good teacher with a lot of
+                knowledge about the topic.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container text-center pt-32 d8466674">
+        <small class="text-gray-600">Say Hello iCoder</small>
+        <div class="flex items-center justify-content-center my-3">
+          <h4 class="text-4xl font-extrabold">Reach us &nbsp</h4>
+          <h4 class="text-4xl font-extrabold text-red-600">here</h4>
+        </div>
+      </div>
+
+      <div class="flex justify-around items-center my-12" id="id1234">
+        <div>
+          <div id="map">
+            <iframe
+              class="frm"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.057399339613!2d-83.0670087261207!3d10.0121176728284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa70ff6ece21015%3A0xc18fc06101ff02c2!2sICODER!5e0!3m2!1sen!2sin!4v1686482523345!5m2!1sen!2sin"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <div class="contact-form">
+            <h2 class="font-bold">Contact Us</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Enter your message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button onclick="openModal()" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="modal " id="myModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank You!!</h5>
+            <button type="button" onclick="closeModal()" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for reaching out to us! <br>We have received your message.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="closeModal()" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="row ficons">
+          <ul>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fa fa-youtube"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#courses">Our Courses</a></li>
+            <li><a href="#testimonials">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          iCoder Copyright © 2023 iCoder - All rights reserved || Designed By:
+          Rohit Singh
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    
+    $(document).ready(function () {
+      $(".fullstack").click(function () {
+        var cardId = $(this).data("card");
+        $(".courseCard").removeClass("active");
+        $("#" + cardId).addClass("active");
+      });
+    });
+
+    $(".owl-carousel.owl1").owlCarousel({
+      loop: true,
+      nav: false,
+      margin: 10,
+      autoplay: true,
+      responsiveClass: true,
+      autoplayTimeout: 10000,
+      animateOut: "fadeout",
+      responsive: {
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        },
+        1400:{
+          items:4,
+        }
+      }
+    });
+    
+    $(".owl-carousel.owl2").owlCarousel({
+      loop:true,
+      nav:false,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        },
+        1400:{
+          items:4,
+        }
+
+    }
+    });
+    
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="logic/index.js"></script>
+</html>
